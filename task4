@@ -1,0 +1,22 @@
+1)
+заходим в root далее
+2)
+mkdir /home/root/task3 
+3)
+touch  /home/root/task3/task3.txt 
+4)
+chown myuser /home/root/task3.txt
+5)
+chown :mygroup task3
+6)
+su myuser   
+vi /home/root/task3/task3.txt 
+нажимаем  i
+далее пишем любые две строки
+нажимаем Esc   потом  пшием  :wq
+
+7)
+ln -s /home/root task3/task3.txt  /home/root/task3_sl 
+
+8)
+cat task3/task3.txt
