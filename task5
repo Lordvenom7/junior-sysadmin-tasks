@@ -1,0 +1,15 @@
+1)
+uname -a
+2)
+cat /etc/redhat-release   или   cat /etc/system-release
+3)
+ls -l /dev/ | grep sd
+4)
+ df  /    или занимаемое место всеми разделами  -   df -h
+ 5)
+ free -h              m — в мегабайтах    -g — в гигабайтах    -h — автоматически формат
+ 6)
+ cat /proc/cpuinfo          
+ 7)
+ ps  или  ps -a  или  ps -la  или   ps -ely 
+разница в них в большей информации
