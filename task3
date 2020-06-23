@@ -1,0 +1,11 @@
+1)
+useradd myuser - без пороля  ;  passwd   myuser - установ пароль
+
+2)
+passwd   myuser - установ пароль
+
+3)
+groupadd mygroup
+
+4)
+usermod -a -G  mygroup myuser 
