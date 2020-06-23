@@ -1,0 +1,22 @@
+Зайти на сайт https://www.centos.org/
+нажать на Get CentOS Now
+далее  alternative downloads
+в первой таблице находим Minimal и нажимаем mirrors 
+потом нажимаем на любой Казахстанских сервер далее скачиваем CentOS-7-x86_64-Minimal-2003.iso   
+
+заходим на сайт https://www.virtualbox.org/  и скачиваем virtualbox
+устанавливаем его и включаем 
+
+в панели virtualbox нажимаем - создать
+пишем название и выбираем Red Hat Linux
+выбираем нужные параметры для себя и нажимаем далее в конце нажимаем создать 
+
+Все! CentOs 7 Minimal у вас установлена
+
+2 задание - 
+cd /etc/hosts  
+ls   или  ls -l
+
+3 задание - 
+cd /
+ls   или  ls -l
