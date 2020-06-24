@@ -1,0 +1,19 @@
+1)
+yum install epel-release    (скачать нужные пакеты)        потом   yum install nginx   далее   systemctl start nginx (включим nginx)
+потом   программу поставим на автозагрузку    -    systemctl enable nginx
+2)
+yum install postgresql-server      потом 
+yum install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-redhat96-9.6-3.noarch.rpm  
+затем    yum install postgresql96-server    далее   postgresql-setup initdb
+еще программу поставим на автозагрузку   systemctl enable postgresql   затем   включим postgresql  systemctl start postgresql
+3)
+ifconfig  или  ip addr  (в моем случае - смотрим на enp0s3  - IP адрес указан в inet (здесь 4 октета разделеные четыремя точками)
+4)
+Если у вас windows заходим в командную строку -  пишем  ping ( здесь ваш IP адрес виртуалки )
+5)
+cd /Etc/sysconfig/network-scripts/   потом  vi  ifcfg-(тут такое же название сети как и в ifconfig , везде разное )    
+потом  надо изменить на  ONPARENT=yes
+затем  /etc/init.d/network restart
+еще   в виртуал боксе -  зайти в настройки centos  потом выбрать -  сеть  - далее выбрать - сетевой мост 
+скачать Putty с официального сайта
+потом только вбить адрес сети в Putty 
