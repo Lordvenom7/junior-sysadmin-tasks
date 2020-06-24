@@ -1,0 +1,8 @@
+1)
+ping (свой адрес сети)
+2)
+ifconfig    или    ip addr
+3)
+systemctl status NetworkManager.service   или   ifconfig    или  netstat -nr 
+4)
+systemctl start NetworkManager.service    или через настройки в /etc/sysconfig/network-scripts тут нужен файл нашей основной сетевухи пример (ifcfg-enp0s3)
