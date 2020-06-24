@@ -1,0 +1,7 @@
+1)
+vi /etc/nginx/conf.d/default.conf          потом заменить - написать 
+listen             8080  default_server;
+index.html по умолчанию   -   итак стоит по умолчанию  в этом же файле
+2)
+curl localhost:8080   ( на всякий случай проверь включен ли nginx )
+systemctl start nginx ( команда включения )
