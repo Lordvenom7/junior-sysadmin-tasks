@@ -1,0 +1,6 @@
+1)
+vi /var/lib/pgsql/data/postgresql.conf 
+#port = 5432   (по умолчаню  стоит)
+ 2)
+netstat -tulpn | grep LISTEN  (покажет все открытые порта - смотрим 5432 )
+netstat -tulpn | grep 5432   ( должно написано  - LISTEN  )
