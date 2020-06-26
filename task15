@@ -1,0 +1,6 @@
+1)
+docker container run -d --name my_nginx nginx
+2)
+docker run -d  --name mynginx  -p 8081:80 nginx
+3)
+curl localhost:8081 
