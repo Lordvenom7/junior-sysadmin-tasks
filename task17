@@ -1,0 +1,20 @@
+1)
+mkdir /root/test_bash
+2)
+mkdir -p /root/test_bash/--{000..100}
+3)
+vi bash.sh      
+прописать в нутри него 
+!/bin/bash
+mkdir /root/test_bash
+for t in {1..100}
+do
+mkdir /root/test_bash/$t
+touch /root/test_bash/$t/$t.txt
+done
+Сохраняем    ( Esc   потом пишем   :wq )
+далее  
+./bash.sh      
+4)
+cd  /root/test_bash             потом        ls -l
+cd  /root/test_bash/1         потом        ls -l
