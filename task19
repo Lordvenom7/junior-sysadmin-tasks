@@ -1,0 +1,12 @@
+1)
+date > time.txt
+2)
+vi  time.sh    ( внутри )
+#!/bin/bash
+for i in {1..60}
+do
+date >> /root/time.txt
+sleep 1s
+done
+3)
+grep 7 /root/time.txt
