@@ -1,0 +1,32 @@
+1)
+mkdir /root/folder7 
+ curl https://google.com > /root/folder7/file22.txt
+еще такой вариант - более большой 
+wget -r -k -l 7 -p -E -nc https://google.com
+2)
+cd /root/folder7
+tar cf  file.tar folder7 
+tar cvf  file.tar folder7  ( для просмотра - что именно происходит )
+3)
+нужно чтобы 2 машины или сервера были включены 
+scp /root/folder7/file.tar  root@192.167.0.115:/root/
+пишем пароль или уже подключено по ключу ssh
+4)
+tar xf file.tar  
+tar xvf file.tar  ( для просмотра - что именно происходит )
+5)
+ping  https://google.com
+6)
+vi /etc/resolv.conf 
+внутри него добавить 
+nameserver 8.8.8.8
+nameserver 8.8.8.4
+7)
+ping  ya.ru
+8)
+vi /etc/hosts
+в файле добавить   - пример 
+   IP_1                 имя_хоста_1         короткое_имя
+192.168.1.60   kali.hackware.lan   kali
+9)
+ping  azamat.it
