@@ -1,8 +1,11 @@
 1)
+#Создать базу данных mydb в постгес
 su postgres   потом   psql     затем   CREATE DATABASE mydb; 
 2)
+#Создать пользователя myuser
 CREATE USER myprojectuser WITH PASSWORD 'password' ;
 3)
+#Создать таблицу mytable, в ней 2 колонки: id (тип integer) и name (тип string)
 это просто создать  -     CREATE TABLE mytable;       ниже уже сразу с таблицами  
 =# CREATE TABLE mytable (
 equip_id serial PRIMARY KEY,
@@ -11,8 +14,10 @@ equip_id serial PRIMARY KEY,
 (# );
  проверка   SELECT * FROM playground;
  4)
+ #дать права myuser на запись в таблицу mytable
  GRANT ALL PRIVILEGES ON mytable TO "myuser ";        -   это на все ( можно частично )
  5)
+ #от пользователя myuser вставить строку в таблицу с id 1 и name Test
  INSERT INTO Products (id , name ) 
 VALUES (1 , 'Test');
 ниже - добавить столбец пример
