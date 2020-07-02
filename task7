@@ -1,8 +1,12 @@
 1)
-ping (свой адрес сети)
+#проверить интернет
+ping (свой адрес сети через другую машину или сервер )
 2)
+#посмотреть сетевые интерфейсы в Linux
 ifconfig    или    ip addr
 3)
+#проверить включен ли основной сетевой интерфейс
 systemctl status NetworkManager.service   или   ifconfig    или  netstat -nr 
 4)
+#включить его
 systemctl start NetworkManager.service    или через настройки в /etc/sysconfig/network-scripts тут нужен файл нашей основной сетевухи пример (ifcfg-enp0s3)
