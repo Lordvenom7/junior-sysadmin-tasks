@@ -1,3 +1,6 @@
+1) 
+#Установи Linux (CentOs 7 Minimal)
+
 Зайти на сайт https://www.centos.org/
 нажать на Get CentOS Now
 далее  alternative downloads
@@ -13,10 +16,14 @@
 
 Все! CentOs 7 Minimal у вас установлена
 
-2 задание - 
+2)
+# посмотри содержимое файла /etc/hosts
+
 cd /etc/hosts  
 ls   или  ls -l
 
-3 задание - 
+3)
+# зайди в корневую директорию (/) и просмотри какие там есть директории
+
 cd /
 ls   или  ls -l
