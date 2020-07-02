@@ -1,8 +1,11 @@
 1)
+#Создаст в папке /root папку test_bash
 mkdir /root/test_bash
 2)
+#Внутри папки test_bash создаст папки: 1, 2, 3, 4 ... и так до 100. Должно быть 100 папок
 mkdir -p /root/test_bash/--{000..100}
 3)
+#В каждой из 100 папок он создаст файл с цифрой папки + txt, то есть в папке 1 файл 1.txt, в папке 2 - 2.txt 
 vi bash.sh      
 прописать в нутри него 
 !/bin/bash
@@ -16,5 +19,6 @@ done
 далее  
 ./bash.sh      
 4)
+#В конце выполнения выведет содержимое папки test_bash и папки test_bash/1
 cd  /root/test_bash             потом        ls -l
 cd  /root/test_bash/1         потом        ls -l
