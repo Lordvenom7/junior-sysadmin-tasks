@@ -1,11 +1,17 @@
 1)
+# Создать пользователя myuser с любым паролем
+
 useradd myuser - без пороля  ;  passwd   myuser - установ пароль
 
 2)
+# Поменять ему пароль на любой другой
 passwd   myuser - установ пароль
 
 3)
+# создать группу mygroup
+
 groupadd mygroup
 
 4)
+# дать пользователю myuser группу mygroup
 usermod -a -G  mygroup myuser 
