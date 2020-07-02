@@ -1,6 +1,8 @@
 1)
+#Проверить на каком порту работает postgresql у тебя на машине
 vi /var/lib/pgsql/data/postgresql.conf 
 #port = 5432   (по умолчаню  стоит)
  2)
+ #Проверить что порт "открыт" для соединения
 netstat -tulpn | grep LISTEN  (покажет все открытые порта - смотрим 5432 )
 netstat -tulpn | grep 5432   ( должно написано  - LISTEN  )
