@@ -1,6 +1,9 @@
 1)
+#стянуть при помощи докера образ nginx
 docker container run -d --name my_nginx nginx
 2)
+#запустить nginx на порту 8081 при помощи докер в фоновом режиме
 docker run -d  --name mynginx  -p 8081:80 nginx
 3)
+#проверить при помощи curl
 curl localhost:8081 
