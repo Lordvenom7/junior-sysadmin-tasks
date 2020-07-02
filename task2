@@ -1,18 +1,25 @@
 1) 
+# Создать папку newfolder в директории /home
 mkdir /home/newfolder 
 
 2)
+# Создать там файл newfile
+
 touch /home/newfolder/newfile
 
 3)
+# Написать в файл любые две строки, используя либо редактор nano либо vi 
 vi /home/newfolder/newfile
 нажимаем  i
 далее пишем любые две строки
 нажимаем Esc   потом  пшием  :wq
 
 
-4) cat  /home/newfolder/newfile 
+4) 
+# вывести содержимое файла на экран 
+cat  /home/newfolder/newfile 
 или   less /home/newfolder/newfile
 
 5)
+# скопировать файл в ту же директорию с именем newfile_copy
 cp /home/newfolder/newfile  /home/newfolder/newfile_copy
