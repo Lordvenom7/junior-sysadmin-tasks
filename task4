@@ -1,22 +1,33 @@
 1)
-заходим в root далее
+# Создать от пользователя рут папку task3 в /home/root
+su 
+root  и пароль 
+mkdir /home/root/task3
 2)
-mkdir /home/root/task3 
+# Создать файл task3.txt внутри папки task3
+touch  /home/root/task3/task3.txt  
 3)
-touch  /home/root/task3/task3.txt 
-4)
+#Сделать myuser владельцем файла task3.txt
 chown myuser /home/root/task3.txt
-5)
+4)
+#Сделать mygroup владельцем папки task3
 chown :mygroup task3
-6)
+
+5)
+#От пользователя myuser записать в файл task3.txt любые две строчки
 su myuser   
 vi /home/root/task3/task3.txt 
 нажимаем  i
 далее пишем любые две строки
 нажимаем Esc   потом  пшием  :wq
 
-7)
+6)
+#Создать символьную ссылку с именем task3_sl внутри /home/root с ссылкой на файл task3/task3.txt
 ln -s /home/root task3/task3.txt  /home/root/task3_sl 
 
-8)
+7)
+#Прочитать файл task3_sl и получить содержимое task3/task3.txt
 cat task3/task3.txt
+
+
+
