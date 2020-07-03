@@ -1,0 +1,26 @@
+1)  
+#  Отображаем содержимое /etc/apt/sources.list, используя команду cat
+cat /etc/apt/sources.list
+2)  
+#  С cat помощью и символа “>” записываем в файл следующие данные
+
+ cat > sources.list
+# DEBIAN JESSIE
+###########################################################
+## Debian Jessie base:
+deb http://ftp.debian.org/debian/ jessie main contrib non-free
+#deb-src http://ftp.debian.org/debian/ jessie main contrib non-free
+## Debian Jessie security updates:
+deb http://security.debian.org/ jessie/updates main contrib non-free
+#deb-src http://security.debian.org/ jessie/updates main contrib non-free
+# Debian Jessie updates:
+deb http://ftp.debian.org/debian/ jessie-updates main contrib non-free
+#deb-src http://ftp.debian.org/debian/ jessie-updates main contrib non-free
+Ctrl + c  (для завершения )
+3)  
+#  Обновляем кэш менеджера пакетов apt-get
+apt-get update
+apt-get upgrade
+4)  
+#  С помощью этой команды устанавливаем пакет vim
+apt-get install vim
