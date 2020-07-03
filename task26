@@ -1,0 +1,27 @@
+ 1) 
+ #  Открываем на редактирование /tmp/lesson/hello.txt с помощью vi
+vi /tmp/lesson/hello.txt 
+ 2)   Печатаем любой текст на 40-50 строк (нужно, чтобы в каждой строке были буквы “abc” в такой же последовательности)   Сохраняем и выходим
+abc
+abc
+abc
+abc
+Итд
+Esc (кнопка на клавиатуре)
+:wq
+ 3) 
+ # Отображаем содержимое с помощью cat, затем less
+less /tmp/lesson/hello.txt 
+4)   
+# Отображаем только последние 10 строк, затем первые 7 строк
+tail -10 /tmp/lesson/hello.txt 
+tail -n10  /tmp/lesson/hello.txt 
+head -7 /tmp/lesson/hello.txt 
+head -n7 /tmp/lesson/hello.txt 
+ 5)  
+ #Считаем количество строк в файле
+wc /tmp/lesson/hello.txt      ( первое число - это колво строк )
+wc -l  /tmp/lesson/hello.txt      (только колво строк )
+
+
+
